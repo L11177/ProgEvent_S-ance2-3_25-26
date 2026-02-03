@@ -98,7 +98,7 @@
             panel1.Controls.Add(label1);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
-            panel1.Cursor = Cursors.Help;
+            panel1.Cursor = Cursors.WaitCursor;
             panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
             panel1.Size = new Size(396, 238);
@@ -107,6 +107,7 @@
             // button1
             // 
             button1.BackColor = Color.FromArgb(224, 224, 224);
+            button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderColor = Color.DodgerBlue;
             button1.FlatAppearance.BorderSize = 2;
             button1.FlatStyle = FlatStyle.Flat;
@@ -127,6 +128,7 @@
             ClientSize = new Size(420, 321);
             Controls.Add(button1);
             Controls.Add(panel1);
+            Cursor = Cursors.Help;
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "aProposForm";
             StartPosition = FormStartPosition.CenterParent;

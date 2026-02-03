@@ -6,7 +6,7 @@ namespace ProgEvent_Séance2_25_26
         {
             InitializeComponent();
             listeMenu.Click += NonImplantee;
-            barreDeProgressionMenu.Click += NonImplantee;
+            barreDeProgressionMenu.Click += barreDeProgressionMenu_Click;
             editeurMenu.Click += NonImplantee;
 
         }
@@ -25,5 +25,11 @@ namespace ProgEvent_Séance2_25_26
             aProposForm f = new aProposForm();
             f.ShowDialog();
         }
+        private void barreDeProgressionMenu_Click(object sender, EventArgs e)
+        {
+            FormProgression f = new FormProgression();
+            f.ShowDialog(); // ouvre la fenêtre de progression
+        }
+
     }
 }

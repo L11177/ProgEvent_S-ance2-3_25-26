@@ -32,8 +32,8 @@
             contrôlesToolStripMenuItem = new ToolStripMenuItem();
             listeMenu = new ToolStripMenuItem();
             barreDeProgressionMenu = new ToolStripMenuItem();
-            toolStripSeparator1 = new ToolStripSeparator();
             quitterMenu = new ToolStripMenuItem();
+            toolStripSeparator1 = new ToolStripSeparator();
             applicationsToolStripMenuItem = new ToolStripMenuItem();
             editeurMenu = new ToolStripMenuItem();
             aideToolStripMenuItem = new ToolStripMenuItem();
@@ -43,6 +43,7 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.BackColor = SystemColors.AppWorkspace;
             menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { contrôlesToolStripMenuItem, applicationsToolStripMenuItem, aideToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
@@ -70,17 +71,17 @@
             barreDeProgressionMenu.Size = new Size(230, 26);
             barreDeProgressionMenu.Text = "Barre de progression";
             // 
-            // toolStripSeparator1
-            // 
-            toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(227, 6);
-            // 
             // quitterMenu
             // 
             quitterMenu.Name = "quitterMenu";
             quitterMenu.Size = new Size(230, 26);
             quitterMenu.Text = "Quitter";
             quitterMenu.Click += quitterMenu_Click;
+            // 
+            // toolStripSeparator1
+            // 
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(227, 6);
             // 
             // applicationsToolStripMenuItem
             // 
@@ -113,6 +114,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.WhiteSmoke;
             ClientSize = new Size(800, 450);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
