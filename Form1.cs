@@ -12,7 +12,7 @@ namespace ProgEvent_Séance2_25_26
         }
         private void NonImplantee(object sender, EventArgs e)
         {
-            MessageBox.Show("Cette fonctionnalité n'est pas encore implémentée", "Information");
+            MessageBox.Show("Cette fonctionnalite n'est pas encore implémentee", "information");
         }
         
         private void quitterMenu_Click(object sender, EventArgs e)
@@ -28,7 +28,7 @@ namespace ProgEvent_Séance2_25_26
         private void barreDeProgressionMenu_Click(object sender, EventArgs e)
         {
             FormProgression f = new FormProgression();
-            f.ShowDialog(); // ouvre la fenêtre de progression
+            f.ShowDialog();
         }
 
     }

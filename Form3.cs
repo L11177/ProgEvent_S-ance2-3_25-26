@@ -12,18 +12,15 @@ namespace ProgEvent_Séance2_25_26
         {
             InitializeComponent();
 
-            // Associer les événements
             this.Load += FormProgression_Load;
             timer1.Tick += timer1_Tick;
         }
 
         private void FormProgression_Load(object sender, EventArgs e)
         {
-            // Initialiser les barres
             progressBarPrincipale.Value = 0;
             progressBarSecondaire.Value = 0;
 
-            // Démarrer le Timer
             timer1.Start();
         }
 
@@ -34,8 +31,8 @@ namespace ProgEvent_Séance2_25_26
 
             if (valeurSecondaire >= progressBarSecondaire.Maximum)
             {
-                valeurSecondaire = 0;               // reset secondaire
-                valeurPrincipale += 10;             // avancer principale
+                valeurSecondaire = 0;
+                valeurPrincipale += 10;             // avancer principal
                 if (valeurPrincipale > progressBarPrincipale.Maximum)
                     valeurPrincipale = progressBarPrincipale.Maximum;
             }
@@ -43,7 +40,7 @@ namespace ProgEvent_Séance2_25_26
             progressBarSecondaire.Value = valeurSecondaire;
             progressBarPrincipale.Value = valeurPrincipale;
 
-            // Si barre principale remplie
+            // Si la barre principale est remplie
             if (valeurPrincipale >= progressBarPrincipale.Maximum)
             {
                 timer1.Stop();
