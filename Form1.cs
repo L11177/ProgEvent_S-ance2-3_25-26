@@ -5,7 +5,7 @@ namespace ProgEvent_Séance2_25_26
         public Form1()
         {
             InitializeComponent();
-            listeMenu.Click += NonImplantee;
+            listeMenu.Click += listeMenu_Click;
             barreDeProgressionMenu.Click += barreDeProgressionMenu_Click;
             editeurMenu.Click += NonImplantee;
 
@@ -14,7 +14,7 @@ namespace ProgEvent_Séance2_25_26
         {
             MessageBox.Show("Cette fonctionnalite n'est pas encore implémentee", "information");
         }
-        
+
         private void quitterMenu_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -31,5 +31,10 @@ namespace ProgEvent_Séance2_25_26
             f.ShowDialog();
         }
 
+        private void listeMenu_Click(object sender, EventArgs e)
+        {
+            EcranListe f = new EcranListe();
+            f.ShowDialog();
+        }
     }
 }

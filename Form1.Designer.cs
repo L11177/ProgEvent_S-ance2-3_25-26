@@ -64,6 +64,7 @@
             listeMenu.Name = "listeMenu";
             listeMenu.Size = new Size(230, 26);
             listeMenu.Text = "Liste";
+            listeMenu.Click += listeMenu_Click;
             // 
             // barreDeProgressionMenu
             // 
@@ -106,7 +107,7 @@
             // aProposMenu
             // 
             aProposMenu.Name = "aProposMenu";
-            aProposMenu.Size = new Size(153, 26);
+            aProposMenu.Size = new Size(224, 26);
             aProposMenu.Text = "A propos";
             aProposMenu.Click += aProposMenu_Click;
             // 
