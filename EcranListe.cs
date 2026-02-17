@@ -16,7 +16,6 @@ namespace ProgEvent_Séance2_25_26
         [DllImport("user32.dll", EntryPoint = "SendMessage")]
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
 
-        // Constantes pour la donnée cachée
         private const int smLire = 0x0199;
         private const int smEcrire = 0x019A;
 
