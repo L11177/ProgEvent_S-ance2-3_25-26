@@ -1,8 +1,11 @@
+using System;
+using System.Windows.Forms;
+
 namespace ProgEvent_Séance2_25_26
 {
-    public partial class Form1 : Form
+    public partial class FenetrePrincipal : Form
     {
-        public Form1()
+        public FenetrePrincipal()
         {
             InitializeComponent();
             listeMenu.Click += listeMenu_Click;
@@ -35,6 +38,12 @@ namespace ProgEvent_Séance2_25_26
         {
             EcranListe f = new EcranListe();
             f.ShowDialog();
+        }
+
+        private void bMalware_Click(object sender, EventArgs e)
+        {
+            ficMalware f = new ficMalware();
+            f.Show();
         }
     }
 }

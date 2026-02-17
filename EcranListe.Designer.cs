@@ -41,8 +41,9 @@
             cbQualite = new ComboBox();
             gbDetail = new GroupBox();
             tbNom = new TextBox();
-            openFileDialog1 = new OpenFileDialog();
-            saveFileDialog1 = new SaveFileDialog();
+            ofdOuvrirFichier = new OpenFileDialog();
+            sfdEnregistrer = new SaveFileDialog();
+            bModifier = new Button();
             gbDetail.SuspendLayout();
             SuspendLayout();
             // 
@@ -81,6 +82,7 @@
             bAnnuler.TabIndex = 3;
             bAnnuler.Text = "Annuler";
             bAnnuler.UseVisualStyleBackColor = true;
+            bAnnuler.Click += bAnnuler_Click;
             // 
             // bConfirmer
             // 
@@ -90,6 +92,7 @@
             bConfirmer.TabIndex = 4;
             bConfirmer.Text = "Confirmer";
             bConfirmer.UseVisualStyleBackColor = true;
+            bConfirmer.Click += bConfirmer_Click;
             // 
             // bOuvrir
             // 
@@ -99,6 +102,7 @@
             bOuvrir.TabIndex = 5;
             bOuvrir.Text = "Ouvrir";
             bOuvrir.UseVisualStyleBackColor = true;
+            bOuvrir.Click += bOuvrir_Click;
             // 
             // bEnregistrer
             // 
@@ -108,24 +112,27 @@
             bEnregistrer.TabIndex = 6;
             bEnregistrer.Text = "Enregistrer";
             bEnregistrer.UseVisualStyleBackColor = true;
+            bEnregistrer.Click += bEnregistrer_Click;
             // 
             // bSupprimer
             // 
-            bSupprimer.Location = new Point(12, 281);
+            bSupprimer.Location = new Point(10, 269);
             bSupprimer.Name = "bSupprimer";
             bSupprimer.Size = new Size(94, 29);
             bSupprimer.TabIndex = 7;
             bSupprimer.Text = "Supprimer";
             bSupprimer.UseVisualStyleBackColor = true;
+            bSupprimer.Click += bSupprimer_Click;
             // 
             // bAjouter
             // 
-            bAjouter.Location = new Point(12, 246);
+            bAjouter.Location = new Point(10, 234);
             bAjouter.Name = "bAjouter";
             bAjouter.Size = new Size(94, 29);
             bAjouter.TabIndex = 8;
             bAjouter.Text = "Ajouter";
             bAjouter.UseVisualStyleBackColor = true;
+            bAjouter.Click += bAjouter_Click;
             // 
             // lbPersonne
             // 
@@ -134,10 +141,12 @@
             lbPersonne.Name = "lbPersonne";
             lbPersonne.Size = new Size(328, 104);
             lbPersonne.TabIndex = 9;
+            lbPersonne.DoubleClick += lbPersonne_DoubleClick;
             // 
             // cbQualite
             // 
             cbQualite.FormattingEnabled = true;
+            cbQualite.Items.AddRange(new object[] { "Madame", "Mademoiselle", "Monsieur", "Mondamoiseau", "Indéfini" });
             cbQualite.Location = new Point(6, 45);
             cbQualite.Name = "cbQualite";
             cbQualite.Size = new Size(190, 28);
@@ -165,19 +174,22 @@
             tbNom.Size = new Size(190, 27);
             tbNom.TabIndex = 0;
             // 
-            // openFileDialog1
+            // bModifier
             // 
-            openFileDialog1.FileName = "²";
-            // 
-            // saveFileDialog1
-            // 
-            saveFileDialog1.FileName = "²²";
+            bModifier.Location = new Point(10, 304);
+            bModifier.Name = "bModifier";
+            bModifier.Size = new Size(94, 29);
+            bModifier.TabIndex = 12;
+            bModifier.Text = "Modifier";
+            bModifier.UseVisualStyleBackColor = true;
+            bModifier.Click += bModifier_Click;
             // 
             // EcranListe
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(349, 340);
+            Controls.Add(bModifier);
             Controls.Add(gbDetail);
             Controls.Add(lbPersonne);
             Controls.Add(bAjouter);
@@ -187,6 +199,7 @@
             Controls.Add(IFichier);
             Name = "EcranListe";
             Text = "EcranListe";
+            Load += EcranListe_Load;
             gbDetail.ResumeLayout(false);
             gbDetail.PerformLayout();
             ResumeLayout(false);
@@ -208,7 +221,8 @@
         private ComboBox cbQualite;
         private GroupBox gbDetail;
         private TextBox tbNom;
-        private OpenFileDialog openFileDialog1;
-        private SaveFileDialog saveFileDialog1;
+        private OpenFileDialog ofdOuvrirFichier;
+        private SaveFileDialog sfdEnregistrer;
+        private Button bModifier;
     }
 }

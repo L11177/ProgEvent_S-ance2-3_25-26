@@ -63,6 +63,16 @@ namespace ProgEvent_Séance2_25_26.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Attention {
+            get {
+                object obj = ResourceManager.GetObject("Attention", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LogoLuka_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("LogoLuka-removebg-preview", resourceCulture);

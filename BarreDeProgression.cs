@@ -26,13 +26,12 @@ namespace ProgEvent_Séance2_25_26
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            // Avancer la barre secondaire
             valeurSecondaire += 5;
 
             if (valeurSecondaire >= progressBarSecondaire.Maximum)
             {
                 valeurSecondaire = 0;
-                valeurPrincipale += 10;             // avancer principal
+                valeurPrincipale += 10; //barre principale
                 if (valeurPrincipale > progressBarPrincipale.Maximum)
                     valeurPrincipale = progressBarPrincipale.Maximum;
             }

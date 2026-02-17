@@ -1,6 +1,6 @@
 ﻿namespace ProgEvent_Séance2_25_26
 {
-    partial class Form1
+    partial class FenetrePrincipal
     {
         /// <summary>
         ///  Required designer variable.
@@ -38,6 +38,7 @@
             editeurMenu = new ToolStripMenuItem();
             aideToolStripMenuItem = new ToolStripMenuItem();
             aProposMenu = new ToolStripMenuItem();
+            bMalware = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -45,7 +46,7 @@
             // 
             menuStrip1.BackColor = SystemColors.AppWorkspace;
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { contrôlesToolStripMenuItem, applicationsToolStripMenuItem, aideToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { contrôlesToolStripMenuItem, applicationsToolStripMenuItem, aideToolStripMenuItem, bMalware });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 28);
@@ -107,11 +108,18 @@
             // aProposMenu
             // 
             aProposMenu.Name = "aProposMenu";
-            aProposMenu.Size = new Size(224, 26);
+            aProposMenu.Size = new Size(153, 26);
             aProposMenu.Text = "A propos";
             aProposMenu.Click += aProposMenu_Click;
             // 
-            // Form1
+            // bMalware
+            // 
+            bMalware.Name = "bMalware";
+            bMalware.Size = new Size(80, 24);
+            bMalware.Text = "Malware";
+            bMalware.Click += bMalware_Click;
+            // 
+            // FenetrePrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -119,7 +127,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            Name = "Form1";
+            Name = "FenetrePrincipal";
             Text = "Form1";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
@@ -139,5 +147,6 @@
         private ToolStripMenuItem aProposMenu;
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripMenuItem quitterMenu;
+        private ToolStripMenuItem bMalware;
     }
 }
