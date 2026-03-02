@@ -39,6 +39,7 @@
             aideToolStripMenuItem = new ToolStripMenuItem();
             aProposMenu = new ToolStripMenuItem();
             bMalware = new ToolStripMenuItem();
+            spirographeToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             // 
             menuStrip1.BackColor = SystemColors.AppWorkspace;
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { contrôlesToolStripMenuItem, applicationsToolStripMenuItem, aideToolStripMenuItem, bMalware });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { contrôlesToolStripMenuItem, applicationsToolStripMenuItem, aideToolStripMenuItem, bMalware, spirographeToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 28);
@@ -119,6 +120,12 @@
             bMalware.Text = "Malware";
             bMalware.Click += bMalware_Click;
             // 
+            // spirographeToolStripMenuItem
+            // 
+            spirographeToolStripMenuItem.Name = "spirographeToolStripMenuItem";
+            spirographeToolStripMenuItem.Size = new Size(105, 24);
+            spirographeToolStripMenuItem.Text = "Spirographe";
+            // 
             // FenetrePrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -148,5 +155,6 @@
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripMenuItem quitterMenu;
         private ToolStripMenuItem bMalware;
+        private ToolStripMenuItem spirographeToolStripMenuItem;
     }
 }

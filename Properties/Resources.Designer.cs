@@ -73,6 +73,16 @@ namespace ProgEvent_Séance2_25_26.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EnregistrerFichier {
+            get {
+                object obj = ResourceManager.GetObject("EnregistrerFichier", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LogoLuka_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("LogoLuka-removebg-preview", resourceCulture);
@@ -86,6 +96,36 @@ namespace ProgEvent_Séance2_25_26.Properties {
         internal static System.Drawing.Bitmap LUKA {
             get {
                 object obj = ResourceManager.GetObject("LUKA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NouveauFichier {
+            get {
+                object obj = ResourceManager.GetObject("NouveauFichier", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OuvrirFichier {
+            get {
+                object obj = ResourceManager.GetObject("OuvrirFichier", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Quitter {
+            get {
+                object obj = ResourceManager.GetObject("Quitter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

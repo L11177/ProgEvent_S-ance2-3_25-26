@@ -10,7 +10,7 @@ namespace ProgEvent_Séance2_25_26
             InitializeComponent();
             listeMenu.Click += listeMenu_Click;
             barreDeProgressionMenu.Click += barreDeProgressionMenu_Click;
-            editeurMenu.Click += NonImplantee;
+            editeurMenu.Click += editeurMenu_Click;
 
         }
         private void NonImplantee(object sender, EventArgs e)
@@ -43,6 +43,13 @@ namespace ProgEvent_Séance2_25_26
         private void bMalware_Click(object sender, EventArgs e)
         {
             ficMalware f = new ficMalware();
+            f.Show();
+        }
+
+        private void editeurMenu_Click(object sender, EventArgs e)
+        {
+            EcranEditeur f = new EcranEditeur();
+
             f.Show();
         }
     }
