@@ -52,5 +52,26 @@ namespace ProgEvent_Séance2_25_26
 
             f.Show();
         }
+
+        private void spirographeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EcranSpirographie f = new EcranSpirographie();
+
+            f.Show();
+        }
+
+        private void horlogeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EcranHorloge f = new EcranHorloge();
+
+            f.Show();
+        }
+
+        private void clavierSourisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EcranClavierSouris f = new EcranClavierSouris();
+
+            f.Show();
+        }
     }
 }

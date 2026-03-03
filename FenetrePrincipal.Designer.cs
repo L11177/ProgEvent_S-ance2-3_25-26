@@ -40,6 +40,8 @@
             aProposMenu = new ToolStripMenuItem();
             bMalware = new ToolStripMenuItem();
             spirographeToolStripMenuItem = new ToolStripMenuItem();
+            horlogeToolStripMenuItem = new ToolStripMenuItem();
+            clavierSourisToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -47,7 +49,7 @@
             // 
             menuStrip1.BackColor = SystemColors.AppWorkspace;
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { contrôlesToolStripMenuItem, applicationsToolStripMenuItem, aideToolStripMenuItem, bMalware, spirographeToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { contrôlesToolStripMenuItem, applicationsToolStripMenuItem, aideToolStripMenuItem, bMalware, spirographeToolStripMenuItem, horlogeToolStripMenuItem, clavierSourisToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 28);
@@ -125,6 +127,21 @@
             spirographeToolStripMenuItem.Name = "spirographeToolStripMenuItem";
             spirographeToolStripMenuItem.Size = new Size(105, 24);
             spirographeToolStripMenuItem.Text = "Spirographe";
+            spirographeToolStripMenuItem.Click += spirographeToolStripMenuItem_Click;
+            // 
+            // horlogeToolStripMenuItem
+            // 
+            horlogeToolStripMenuItem.Name = "horlogeToolStripMenuItem";
+            horlogeToolStripMenuItem.Size = new Size(78, 24);
+            horlogeToolStripMenuItem.Text = "Horloge";
+            horlogeToolStripMenuItem.Click += horlogeToolStripMenuItem_Click;
+            // 
+            // clavierSourisToolStripMenuItem
+            // 
+            clavierSourisToolStripMenuItem.Name = "clavierSourisToolStripMenuItem";
+            clavierSourisToolStripMenuItem.Size = new Size(114, 24);
+            clavierSourisToolStripMenuItem.Text = "Clavier/Souris";
+            clavierSourisToolStripMenuItem.Click += clavierSourisToolStripMenuItem_Click;
             // 
             // FenetrePrincipal
             // 
@@ -156,5 +173,7 @@
         private ToolStripMenuItem quitterMenu;
         private ToolStripMenuItem bMalware;
         private ToolStripMenuItem spirographeToolStripMenuItem;
+        private ToolStripMenuItem horlogeToolStripMenuItem;
+        private ToolStripMenuItem clavierSourisToolStripMenuItem;
     }
 }
