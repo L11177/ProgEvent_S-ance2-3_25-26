@@ -73,5 +73,12 @@ namespace ProgEvent_Séance2_25_26
 
             f.Show();
         }
+
+        private void FicExplorateur_Click(object sender, EventArgs e)
+        {
+            EcranExplorateur f = new EcranExplorateur();
+
+            f.Show();
+        }
     }
 }

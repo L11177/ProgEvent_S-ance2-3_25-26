@@ -42,6 +42,7 @@
             spirographeToolStripMenuItem = new ToolStripMenuItem();
             horlogeToolStripMenuItem = new ToolStripMenuItem();
             clavierSourisToolStripMenuItem = new ToolStripMenuItem();
+            FicExplorateur = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             // 
             menuStrip1.BackColor = SystemColors.AppWorkspace;
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { contrôlesToolStripMenuItem, applicationsToolStripMenuItem, aideToolStripMenuItem, bMalware, spirographeToolStripMenuItem, horlogeToolStripMenuItem, clavierSourisToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { contrôlesToolStripMenuItem, applicationsToolStripMenuItem, aideToolStripMenuItem, bMalware, spirographeToolStripMenuItem, horlogeToolStripMenuItem, clavierSourisToolStripMenuItem, FicExplorateur });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 28);
@@ -143,6 +144,13 @@
             clavierSourisToolStripMenuItem.Text = "Clavier/Souris";
             clavierSourisToolStripMenuItem.Click += clavierSourisToolStripMenuItem_Click;
             // 
+            // FicExplorateur
+            // 
+            FicExplorateur.Name = "FicExplorateur";
+            FicExplorateur.Size = new Size(99, 24);
+            FicExplorateur.Text = "Explorateur";
+            FicExplorateur.Click += FicExplorateur_Click;
+            // 
             // FenetrePrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -175,5 +183,6 @@
         private ToolStripMenuItem spirographeToolStripMenuItem;
         private ToolStripMenuItem horlogeToolStripMenuItem;
         private ToolStripMenuItem clavierSourisToolStripMenuItem;
+        private ToolStripMenuItem FicExplorateur;
     }
 }
