@@ -43,6 +43,7 @@
             horlogeToolStripMenuItem = new ToolStripMenuItem();
             clavierSourisToolStripMenuItem = new ToolStripMenuItem();
             FicExplorateur = new ToolStripMenuItem();
+            baseDeDonnéeToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -50,10 +51,10 @@
             // 
             menuStrip1.BackColor = SystemColors.AppWorkspace;
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { contrôlesToolStripMenuItem, applicationsToolStripMenuItem, aideToolStripMenuItem, bMalware, spirographeToolStripMenuItem, horlogeToolStripMenuItem, clavierSourisToolStripMenuItem, FicExplorateur });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { contrôlesToolStripMenuItem, applicationsToolStripMenuItem, aideToolStripMenuItem, bMalware, spirographeToolStripMenuItem, horlogeToolStripMenuItem, clavierSourisToolStripMenuItem, FicExplorateur, baseDeDonnéeToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 28);
+            menuStrip1.Size = new Size(882, 28);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -151,12 +152,19 @@
             FicExplorateur.Text = "Explorateur";
             FicExplorateur.Click += FicExplorateur_Click;
             // 
+            // baseDeDonnéeToolStripMenuItem
+            // 
+            baseDeDonnéeToolStripMenuItem.Name = "baseDeDonnéeToolStripMenuItem";
+            baseDeDonnéeToolStripMenuItem.Size = new Size(129, 24);
+            baseDeDonnéeToolStripMenuItem.Text = "Base de donnée";
+            baseDeDonnéeToolStripMenuItem.Click += baseDeDonnéeToolStripMenuItem_Click;
+            // 
             // FenetrePrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(882, 450);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "FenetrePrincipal";
@@ -184,5 +192,6 @@
         private ToolStripMenuItem horlogeToolStripMenuItem;
         private ToolStripMenuItem clavierSourisToolStripMenuItem;
         private ToolStripMenuItem FicExplorateur;
+        private ToolStripMenuItem baseDeDonnéeToolStripMenuItem;
     }
 }

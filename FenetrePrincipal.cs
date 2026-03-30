@@ -80,5 +80,12 @@ namespace ProgEvent_Séance2_25_26
 
             f.Show();
         }
+
+        private void baseDeDonnéeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BaseDeDonnee f = new BaseDeDonnee();
+
+            f.Show();
+        }
     }
 }
