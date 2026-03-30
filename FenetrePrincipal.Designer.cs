@@ -36,6 +36,7 @@
             toolStripSeparator1 = new ToolStripSeparator();
             applicationsToolStripMenuItem = new ToolStripMenuItem();
             editeurMenu = new ToolStripMenuItem();
+            histogrammeToolStripMenuItem = new ToolStripMenuItem();
             aideToolStripMenuItem = new ToolStripMenuItem();
             aProposMenu = new ToolStripMenuItem();
             bMalware = new ToolStripMenuItem();
@@ -92,7 +93,7 @@
             // 
             // applicationsToolStripMenuItem
             // 
-            applicationsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { editeurMenu });
+            applicationsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { editeurMenu, histogrammeToolStripMenuItem });
             applicationsToolStripMenuItem.Name = "applicationsToolStripMenuItem";
             applicationsToolStripMenuItem.Size = new Size(106, 24);
             applicationsToolStripMenuItem.Text = "Applications";
@@ -100,8 +101,15 @@
             // editeurMenu
             // 
             editeurMenu.Name = "editeurMenu";
-            editeurMenu.Size = new Size(139, 26);
+            editeurMenu.Size = new Size(224, 26);
             editeurMenu.Text = "Editeur";
+            // 
+            // histogrammeToolStripMenuItem
+            // 
+            histogrammeToolStripMenuItem.Name = "histogrammeToolStripMenuItem";
+            histogrammeToolStripMenuItem.Size = new Size(224, 26);
+            histogrammeToolStripMenuItem.Text = "Histogramme";
+            histogrammeToolStripMenuItem.Click += histogrammeToolStripMenuItem_Click;
             // 
             // aideToolStripMenuItem
             // 
@@ -193,5 +201,6 @@
         private ToolStripMenuItem clavierSourisToolStripMenuItem;
         private ToolStripMenuItem FicExplorateur;
         private ToolStripMenuItem baseDeDonnéeToolStripMenuItem;
+        private ToolStripMenuItem histogrammeToolStripMenuItem;
     }
 }

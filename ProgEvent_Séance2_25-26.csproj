@@ -24,6 +24,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Séance11\Mes_Controles\Mes_Controles.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mes_Controles">
+      <HintPath>..\..\Séance11\Mes_Controles\bin\Debug\net8.0-windows\Mes_Controles.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
