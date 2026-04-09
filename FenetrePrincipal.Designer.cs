@@ -45,6 +45,7 @@
             clavierSourisToolStripMenuItem = new ToolStripMenuItem();
             FicExplorateur = new ToolStripMenuItem();
             baseDeDonnéeToolStripMenuItem = new ToolStripMenuItem();
+            intégrationToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -93,7 +94,7 @@
             // 
             // applicationsToolStripMenuItem
             // 
-            applicationsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { editeurMenu, histogrammeToolStripMenuItem });
+            applicationsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { editeurMenu, histogrammeToolStripMenuItem, intégrationToolStripMenuItem });
             applicationsToolStripMenuItem.Name = "applicationsToolStripMenuItem";
             applicationsToolStripMenuItem.Size = new Size(106, 24);
             applicationsToolStripMenuItem.Text = "Applications";
@@ -167,6 +168,13 @@
             baseDeDonnéeToolStripMenuItem.Text = "Base de donnée";
             baseDeDonnéeToolStripMenuItem.Click += baseDeDonnéeToolStripMenuItem_Click;
             // 
+            // intégrationToolStripMenuItem
+            // 
+            intégrationToolStripMenuItem.Name = "intégrationToolStripMenuItem";
+            intégrationToolStripMenuItem.Size = new Size(224, 26);
+            intégrationToolStripMenuItem.Text = "Intégration";
+            intégrationToolStripMenuItem.Click += intégrationToolStripMenuItem_Click;
+            // 
             // FenetrePrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -202,5 +210,6 @@
         private ToolStripMenuItem FicExplorateur;
         private ToolStripMenuItem baseDeDonnéeToolStripMenuItem;
         private ToolStripMenuItem histogrammeToolStripMenuItem;
+        private ToolStripMenuItem intégrationToolStripMenuItem;
     }
 }

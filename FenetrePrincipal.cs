@@ -91,7 +91,14 @@ namespace ProgEvent_Séance2_25_26
         private void histogrammeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EcranHistogramme f = new EcranHistogramme();
-    
+
+            f.Show();
+        }
+
+        private void intégrationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EcranIntegration f = new EcranIntegration();
+
             f.Show();
         }
     }
