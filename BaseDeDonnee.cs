@@ -13,7 +13,7 @@ namespace ProgEvent_Séance2_25_26
 {
     public partial class BaseDeDonnee : Form
     {
-        string cnStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\BaseDeDonnee.mdf;Initial Catalog=GarageV2;Integrated Security=True;Connect Timeout=30";
+        string cnStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\BaseDeDonnee.mdf;Initial Catalog=BaseDeDonnee;Integrated Security=True;Connect Timeout=30";
         public BaseDeDonnee()
         {
             InitializeComponent();
@@ -68,6 +68,12 @@ namespace ProgEvent_Séance2_25_26
         // --- BOUTON AJOUTER ---
         private void bAjouter_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(tbNom.Text) || string.IsNullOrWhiteSpace(tbPrenom.Text))
+            {
+                MessageBox.Show("Veuillez remplir le NOM et le PRÉNOM avant d'ajouter.", "Champs vides", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             using (SqlConnection cn = new SqlConnection(cnStr))
             {
                 try
@@ -81,7 +87,7 @@ namespace ProgEvent_Séance2_25_26
 
                     cmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Client ajouté au garage !");
+                    MessageBox.Show("Client ajouté avec succès !");
 
                     tbNom.Clear();
                     tbPrenom.Clear();
